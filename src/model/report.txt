@@ -1,0 +1,39 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'cnn.py'
+ outputting to 'cnn_v2.py'
+--------------------------------------------------------------------------------
+
+30:22: INFO: Renamed 'tf.layers.batch_normalization' to 'tf.compat.v1.layers.batch_normalization'
+40:18: INFO: Renamed 'tf.layers.batch_normalization' to 'tf.compat.v1.layers.batch_normalization'
+72:11: INFO: tf.losses.sparse_softmax_cross_entropy requires manual check. tf.losses have been replaced with object oriented versions in TF 2.0 and after. The loss function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+72:11: INFO: Renamed 'tf.losses.sparse_softmax_cross_entropy' to 'tf.compat.v1.losses.sparse_softmax_cross_entropy'
+77:20: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+78:22: INFO: Renamed 'tf.train.get_or_create_global_step' to 'tf.compat.v1.train.get_or_create_global_step'
+81:41: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+81:59: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+87:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+89:24: INFO: tf.metrics.accuracy requires manual check. tf.metrics have been replaced with object oriented versions in TF 2.0 and after. The metric function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+89:24: INFO: Renamed 'tf.metrics.accuracy' to 'tf.compat.v1.metrics.accuracy'
+90:20: INFO: tf.metrics.mean requires manual check. tf.metrics have been replaced with object oriented versions in TF 2.0 and after. The metric function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+90:20: INFO: Renamed 'tf.metrics.mean' to 'tf.compat.v1.metrics.mean'
+97:23: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+97:41: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+98:22: INFO: Renamed 'tf.variables_initializer' to 'tf.compat.v1.variables_initializer'
+101:4: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+102:4: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+103:4: INFO: tf.summary.image requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+113:8: INFO: tf.summary.image requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+118:37: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+125:31: INFO: tf.summary.merge_all requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+125:31: INFO: Renamed 'tf.summary.merge_all' to 'tf.compat.v1.summary.merge_all'
+--------------------------------------------------------------------------------
+
